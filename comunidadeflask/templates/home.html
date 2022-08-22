@@ -3,8 +3,8 @@
 {% block body %}
 
         <div class="container mt-3">
-            <h1 style="color: blue">Comunidade Flask</h1>
-            <h2>Pessoal do curso da Fundação Estudar</h2>
+            <h1>Comunidade Flask</h1>
+            <h2 style="color: green">Forum para os alunos do curso de CC-50 da Fundação Estudar Na Prática</h2>
             <hr>
             {% for post in posts %}
             <div class="row border mt-4 p-3 meupost">
@@ -16,7 +16,9 @@
                     <div class="row justify-content-center">
 
                     {% for curso in post.autor.cursos.split(';') %}
-                    <button type="button" class="btn btn-success mt-2" disabled>{{ curso }}</button>
+                        <div class="d-grid gap-2 d-md-block col-auto mr-auto">
+                            <button type="button" class="btn btn-success mt-2" disabled>{{ curso }}</button>
+                        </div>
                     {% endfor %}
 
 
