@@ -39,3 +39,16 @@
 .meupost{
     background: #f2f5f8 !important;
 }
+.image {
+    width: 50px
+}
+@media (min-width: 415px) {
+    .image {
+        width: 100px
+    }
+}
+@media (min-width: 1000px) {
+    .image {
+        width: 150px
+    }
+}
